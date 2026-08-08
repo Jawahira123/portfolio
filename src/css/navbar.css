@@ -146,3 +146,58 @@ html{
     background:var(--primary);
 
 }
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-body {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .fullname {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+
+        flex: 1;
+        overflow-x: auto;
+
+        margin-left: 15px;
+
+        gap: 25px;
+
+        white-space: nowrap;
+
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+
+    .theme-btn {
+        flex-shrink: 0;
+    }
+
+}

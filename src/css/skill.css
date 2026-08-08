@@ -205,3 +205,58 @@
 }
 
 }
+
+@media (max-width: 768px) {
+
+    .skill {
+        position: relative;
+        min-height: auto;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        overflow: hidden;
+        background-attachment: scroll;
+    }
+
+    .skill-body {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .skill-body h1 {
+        display: block;
+        text-align: center;
+        font-size: 34px;
+        margin: 0 0 30px;
+    }
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-content {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .skill-content h2 {
+        text-align: center;
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .item-s {
+        height: 105px;
+    }
+}

@@ -136,3 +136,19 @@ input,
 textarea{
     cursor:none;
 }
+
+@media (max-width: 768px) {
+
+    html,
+    body,
+    #root {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+}

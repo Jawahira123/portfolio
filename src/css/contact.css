@@ -188,3 +188,174 @@ text-align: left;
         transform:translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+
+    .contact-body {
+        min-height: 100vh;
+        padding: 90px 20px 40px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    /* Heading */
+
+    .contact-body h1 {
+        font-size: 34px;
+        text-align: center;
+        margin: 0 0 15px;
+        padding: 10px;
+    }
+
+    .contact-body h1:hover {
+        transform: none;
+        letter-spacing: 1px;
+    }
+
+    .contact-body h1 + p {
+        margin: 0 auto 30px;
+        padding: 0 10px;
+        text-align: center;
+        color: #c084fc;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* Main contact section */
+
+    .contact {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    /* Icons */
+
+    .icons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+    }
+
+    .icon2 {
+        padding: 10px;
+    }
+
+
+    /* Contact information */
+
+    .contact-info {
+        width: 100%;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-info p {
+        margin: 0;
+
+        width: 100%;
+
+        color: white;
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        word-break: break-word;
+    }
+
+
+    /* Contact form */
+
+    .contact-form {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .contact-form form {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form button {
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+        height: 45px;
+        padding: 10px 12px;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        height: 48px;
+    }
+
+
+    /* Available for work */
+
+    .available {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        margin: 20px 0 0;
+
+        padding: 18px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .available h5 {
+        margin: 5px 0 8px;
+    }
+
+    .available p {
+        margin: 0;
+
+        text-align: center;
+
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+}

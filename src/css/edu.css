@@ -1,173 +1,426 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.edu-body{
-    min-height:100vh;
-     background:
-        linear-gradient(rgba(9,10,31,.85),rgba(13, 15, 49, 0.9)),
-        url("../assets/certibg.png");
+.edu-body {
+    min-height: 100vh;
+    padding: 50px 60px 100px;
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    padding: 50px;
-    
+    background:
+        linear-gradient(
+            rgba(9,10,31,.85),
+            rgba(13,15,49,.9)
+        );
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Heading */
+/* =========================
+   HEADING
+========================= */
 
-.edu-body h1{
-    margin-top: 70px;
-    color:#fff;
-    font-size:42px;
-    margin-bottom:60px;
+.edu-body h1 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    color: white;
+    font-size: 42px;
     text-align: center;
-     transition: .4s ease;
-    position:relative;
-    margin-left: 30px;
+
+    transition: .4s ease;
 }
 
-.edu-body h1:hover{
+.edu-body h1:hover {
     letter-spacing: 2px;
     text-shadow: 0 0 15px rgba(139,92,246,.7);
 }
 
+/* =========================
+   MAIN EDUCATION LAYOUT
+========================= */
 
-/* Main Layout */
+.education {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 
-.education{
-    display:flex;
-    align-items:flex-start;
-    gap:40px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Timeline */
+/* =========================
+   TIMELINE
+========================= */
 
-.timeline-item{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:150px;
-    position:relative;
+.timeline-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 150px;
+
     margin-top: 15px;
-    margin-left: 30px;
-    
+    min-width: 70px;
 }
 
-/* Vertical Line */
+/* Vertical line */
 
+.timeline-item::before {
+    content: "";
 
+    position: absolute;
 
-.timeline-item::before{
-    content:"";
-    position:absolute;
-    width:3px;
-    height:200px;
-    background:linear-gradient(to bottom,#8b5cf6,#5b21b6);
-    top:10px;
-    left:50%;
-    transform:translateX(-50%);
+    width: 3px;
+    height: 230px;
+
+    background: linear-gradient(
+        to bottom,
+        #8b5cf6,
+        #5b21b6
+    );
+
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 
-/* Graduation Icon */
+/* Graduation icon */
 
-.edu-icon{
-    width:60px;
-    height:60px;
-    background:#7c3aed;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    font-size:26px;
-    z-index:2;
+.edu-icon {
+    width: 60px;
+    height: 60px;
 
-    box-shadow:0 0 20px rgba(124,58,237,.6);
+    background: #7c3aed;
 
-    transition:0.4s ease;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 26px;
+
+    z-index: 2;
+
+    box-shadow:
+        0 0 20px rgba(124,58,237,.6);
+
+    transition: .4s ease;
 }
 
-.icon:hover{
-    transform:scale(1.15) rotate(8deg);
-    box-shadow:0 0 35px rgba(124,58,237,1);
+.edu-icon:hover {
+    transform: scale(1.15) rotate(8deg);
+
+    box-shadow:
+        0 0 35px rgba(124,58,237,1);
 }
 
-/* Degree Column */
+/* =========================
+   DEGREE CONTENT
+========================= */
 
-.degree{
-    display:flex;
-    flex-direction:column;
-    gap:70px;
+.degree {
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+
+    flex: 1;
 }
 
-/* Card */
-
-.mca{
-    margin-top: 15px;
+.mca {
     text-align: left;
-    transition:.4s;
-    cursor:pointer;
+
+    transition: .4s ease;
+
+    cursor: pointer;
 }
 
-.mca:hover{
-    transform:translateX(15px);
+.mca:hover {
+    transform: translateX(10px);
 }
 
 /* Year */
 
-.mca h4{
-    color:#8b5cf6;
-    font-size:18px;
-    margin-bottom:10px;
+.mca h4 {
+    color: #8b5cf6;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
 }
 
-/* Degree Name */
+/* Degree */
 
-.mca h2{
-    color:white;
-    font-size:30px;
-    margin-bottom:10px;
-    transition:.3s;
+.mca h2 {
+    color: white;
+
+    font-size: 30px;
+
+    max-width: 550px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+
+    transition: .3s;
 }
 
+.mca:hover h2 {
+    color: #c084fc;
+}
 
 /* College */
 
-.mca p{
-    color:#cfcfcf;
-    font-size:18px;
-    line-height:1.6;
+.mca p {
+    color: #cfcfcf;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 550px;
 }
 
-/* Fade Animation */
+/* =========================
+   ANIMATION
+========================= */
 
 .timeline-item,
-.mca{
-    opacity:0;
-    transform:translateY(40px);
-    animation:fadeUp .8s forwards;
+.mca {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    animation: fadeUp .8s forwards;
 }
 
-.mca:nth-child(2){
-    animation-delay:.3s;
+.mca:nth-child(2) {
+    animation-delay: .3s;
 }
 
-@keyframes fadeUp{
+@keyframes fadeUp {
 
-    from{
-        opacity:0;
-        transform:translateY(40px);
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
 
-    to{
-        opacity:1;
-        transform:translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .edu-body {
+        padding: 80px 40px;
     }
 
+    .education {
+        max-width: 800px;
+    }
+
+    .mca h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .edu-body {
+
+        min-height: auto;
+
+        padding: 80px 20px 80px;
+
+        background-attachment: scroll;
+
+        overflow: hidden;
+    }
+
+    /* Heading */
+
+    .edu-body h1 {
+
+        margin-top: 0;
+
+        margin-bottom: 50px;
+
+        font-size: 36px;
+
+        text-align: center;
+    }
+
+    /* Main layout */
+
+    .education {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        width: 100%;
+
+        margin: 0;
+    }
+
+    /* Timeline */
+
+    .timeline-item {
+
+        min-width: 55px;
+
+        gap: 150px;
+
+        margin-top: 10px;
+    }
+
+    /* Timeline line */
+
+    .timeline-item::before {
+
+        height: 260px;
+
+        width: 3px;
+    }
+
+    /* Icons */
+
+    .edu-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 22px;
+    }
+
+    /* Degree content */
+
+    .degree {
+
+        gap: 70px;
+
+        min-width: 0;
+    }
+
+    .mca {
+
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .mca h4 {
+
+        font-size: 16px;
+
+        margin-bottom: 8px;
+    }
+
+    .mca h2 {
+
+        font-size: 25px;
+
+        line-height: 1.25;
+
+        margin-bottom: 8px;
+
+        word-break: normal;
+    }
+
+    .mca p {
+
+        font-size: 16px;
+
+        line-height: 1.5;
+
+        word-break: normal;
+    }
+
+}
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+    .edu-body {
+
+        padding: 70px 15px 70px;
+    }
+
+    .edu-body h1 {
+
+        font-size: 32px;
+
+        margin-bottom: 45px;
+    }
+
+    .education {
+
+        gap: 15px;
+    }
+
+    .timeline-item {
+
+        min-width: 45px;
+
+        gap: 145px;
+    }
+
+    .timeline-item::before {
+
+        height: 250px;
+    }
+
+    .edu-icon {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 19px;
+    }
+
+    .mca h4 {
+
+        font-size: 15px;
+    }
+
+    .mca h2 {
+
+        font-size: 22px;
+    }
+
+    .mca p {
+
+        font-size: 15px;
+    }
 }

@@ -220,3 +220,159 @@ background:
         0 15px 35px rgba(139,92,246,.25);
 
 }
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        height: auto;
+        background-attachment: scroll;
+        overflow: hidden;
+    }
+
+    .hero-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-left {
+        width: auto;
+        margin: 45px 25px 0;
+        text-align: left;
+        order: 1;
+    }
+
+    .hero-left h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+        margin: 10px 0;
+        line-height: 1.05;
+    }
+
+    .hero-left h2 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 15px 0;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+
+    /* Programmer image */
+
+    .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+
+    .hero-right img {
+        width: 75%;
+        max-width: 320px;
+        margin-top: 10px;
+    }
+
+
+    /* Buttons */
+
+    .hero-btn {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        margin: 25px 0 15px;
+        gap: 15px;
+    }
+
+    .hero-btn #btn1 {
+        width: 180px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .hero-btn #btn2 {
+        width: 150px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+
+    /* Social icons */
+
+    .hero-icon {
+        position: static;
+
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        margin: 10px 0 35px;
+        gap: 20px;
+    }
+
+    .hero-icon button {
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-left {
+        margin: 35px 20px 0;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-left h2 {
+        font-size: 20px;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-right img {
+        width: 80%;
+    }
+
+    .hero-btn {
+        gap: 10px;
+    }
+
+    .hero-btn #btn1 {
+        width: 175px;
+    }
+
+    .hero-btn #btn2 {
+        width: 145px;
+    }
+
+}

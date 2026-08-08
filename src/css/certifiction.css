@@ -153,3 +153,115 @@
     border: #090A1F;
     border-color:white ;
 }
+
+@media (max-width: 768px) {
+
+    .certi {
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background-attachment: scroll;
+    }
+
+    /* Heading */
+
+    .certi-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certi-head h1 {
+        margin: 60px 0 25px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Description */
+
+    .certi > p {
+        margin: 0 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Section heading */
+
+    .certi h3 {
+        margin: 40px 20px 25px;
+        font-size: 20px;
+    }
+
+    /* Certificate cards */
+
+    .certi-content {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .online-certi,
+    .offline-certi {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 320px;
+        box-sizing: border-box;
+    }
+
+    /* Certificate image */
+
+    .online-certi img,
+    .offline-certi img {
+        width: 90%;
+        height: auto;
+        max-height: 180px;
+        object-fit: contain;
+        margin: 20px auto 0;
+    }
+
+    /* Certificate title */
+
+    .online-certi h4,
+    .offline-certi h4 {
+        margin: 15px 20px 0;
+        font-size: 16px;
+    }
+
+    /* Certificate description */
+
+    .online-certi p,
+    .offline-certi p {
+        margin: 6px 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Button */
+
+    .certi-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .certi-btn button {
+        width: 85%;
+        height: 40px;
+        margin: 12px auto;
+    }
+
+    /* Offline badge */
+
+    .offline-certi h6 {
+        margin-left: 20px;
+    }
+
+}
