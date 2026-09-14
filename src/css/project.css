@@ -1,212 +1,157 @@
-
-.project {
-    min-height: 100vh;
-    padding-top: 70px;
+.project{
+    min-height:100vh;
+    padding-top:70px;
     background:
-        linear-gradient(rgba(9,10,31,.85), rgba(13,15,49,.9)),
+        linear-gradient(rgba(9,10,31,.85),rgba(13, 15, 49, 0.9)),
         url("../assets/projectbg.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
-
-.project-head h1 {
+.project-head h1{
     color: white;
-    margin-top: 0;
-    margin-left: 30px;
+   margin-top:0;
+    margin-left:30px;
     text-align: center;
+
     transition: .4s ease;
     cursor: default;
 }
 
-.project-body h1:hover {
+.project-body h1:hover{
     letter-spacing: 2px;
     text-shadow: 0 0 15px rgba(139,92,246,.7);
 }
 
 
-/* PROJECT CONTAINER */
-
-.project-container {
+.project-container{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    align-items: stretch;
-    margin: 80px 20px 0;
+    justify-items: flex-start;
+    margin:80px 20px 0;
 }
-
-
-/* PROJECT CARD */
-
-.project-list {
+.project-list{
     background-color: #242544;
-    width: 450px;
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
+    width:450px;
+    border-radius:20px;
 
     transition: .4s ease;
 }
 
-.project-list:hover {
+.project-list:hover{
     transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(139,92,246,.25);
+    box-shadow:0 18px 35px rgba(139,92,246,.25);
 }
 
-
-/* PROJECT IMAGE */
-
-.project-list img {
+.project-list img{
     height: 200px;
     width: 370px;
-    margin: 20px auto 0;
+    margin-top: 20px;
     border-radius: 20px;
-    object-fit: cover;
 }
-
-
-/* PROJECT TITLE */
-
-.project-list h4 {
-    background: linear-gradient(90deg, #ea07ff, #006eec);
+.project-list h4{
+   background: linear-gradient(90deg, #ea07ff, #006eec);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-align: left;
     margin-left: 20px;
-    margin-right: 20px;
 }
-
-
-/* PROJECT DESCRIPTION */
-
-.project-list > p {
+.project-list p{
     color: white;
     font-size: small;
     text-align: left;
-    line-height: 1.6;
-
     margin-left: 20px;
     margin-right: 20px;
 }
 
-
-/* TECHNOLOGIES */
-
-.techs {
+.techs{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    flex-wrap: wrap;
+     
+}
+.techs p{
+    margin:10px;
+    background:#090A1F;
+    width:80px;
+    text-align:center;
+    border-radius:10px;
 
-    margin-top: auto;
+    transition:.3s ease;
+    cursor:default;
 }
 
-.techs p {
-    margin: 10px;
-    background: #090A1F;
-    width: 80px;
-    text-align: center;
-    border-radius: 10px;
-
-    transition: .3s ease;
-    cursor: default;
-}
-
-.techs p:hover {
-    transform: translateY(-4px);
-    background: #18193a;
-    box-shadow: 0 0 12px rgba(139,92,246,.4);
+.techs p:hover{
+    transform:translateY(-4px);
+    background:#18193a;
+    box-shadow:0 0 12px rgba(139,92,246,.4);
 }
 
 
-/* TECHNOLOGY BORDERS */
-
-#react {
+#react{
     border: 1px solid #006eec;
 }
-
-#node {
-    border: 1px solid #00c510;
+#node{
+  border: 1px solid #00c510;  
 }
-
-#express {
-    border: 1px solid #ec5e00;
+#express{
+border: 1px solid #ec5e00;
 }
-
-#mongo {
-    border: 1px solid #00ecec;
+#mongo{
+   border: 1px solid #00ecec;
 }
-
-#html {
-    border: 1px solid #ec006e;
+#html{
+  border: 1px solid #ec006e;
 }
-
-#css {
-    border: 1px solid #e400ec;
+#css{
+   border: 1px solid #e400ec;
 }
-
-
-/* PROJECT BUTTONS */
-
-.project-btn {
+.project-btn{
     display: flex;
-    margin: 20px;
+    margin: 20px ;
     justify-content: space-between;
-    gap: 15px;
+    
+}
+.project-btn button{
+    background:#242544;
+    height:50px;
+    width:120px;
+    border:1px solid #8B5CF6;
+    border-radius:12px;
+    color:white;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    transition:.35s ease;
 }
 
-.project-btn button {
-    background: #242544;
-    height: 50px;
-    width: 120px;
-
-    border: 1px solid #8B5CF6;
-    border-radius: 12px;
-
-    color: white;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-
-    transition: .35s ease;
+.project-btn button:hover{
+    background:linear-gradient(90deg,#8B5CF6,#3B82F6);
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(139,92,246,.35);
 }
 
-.project-btn button:hover {
-    background: linear-gradient(90deg, #8B5CF6, #3B82F6);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(139,92,246,.35);
+.git-icon{
+    font-size:18px;
+    transition:.3s ease;
 }
 
-
-/* GITHUB ICON */
-
-.git-icon {
-    font-size: 18px;
-    transition: .3s ease;
+.project-btn button:hover .git-icon{
+    transform:rotate(360deg);
 }
 
-.project-btn button:hover .git-icon {
-    transform: rotate(360deg);
-}
-
-
-/* TABLEAU IMAGE */
-
-#dash {
+#dash{
     width: 400px;
-    height: 250px;
-    object-fit: cover;
+    height:250px ;
+   
 }
-
-
-/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -222,7 +167,6 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-
         margin: 40px 0 0;
         width: 100%;
         box-sizing: border-box;
@@ -239,14 +183,13 @@
         width: calc(100% - 20px);
         height: 190px;
         object-fit: cover;
-        margin: 10px auto;
+        margin: 10px;
         box-sizing: border-box;
     }
 
     .project-list h4 {
         font-size: 18px;
         margin-left: 20px;
-        margin-right: 20px;
     }
 
     .project-list > p {
@@ -268,7 +211,6 @@
 
     .project-btn {
         margin: 20px;
-        gap: 10px;
     }
 
     .project-btn button {

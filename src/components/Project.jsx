@@ -13,8 +13,8 @@ function Project() {
     const { github } = useContext(PortfolioContext);
 
     const openLink = (url) => {
-        window.open(url, "_blank", "noopener,noreferrer");
-    };
+    window.open(url, "_blank");
+};
 
     const tableau =
         "https://public.tableau.com/app/profile/jawahira.sanofar.j/viz/salesdashboard_17776948783690/Dashboard1";
